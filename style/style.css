@@ -15,78 +15,104 @@ body {
     font-family: lato;
 }
 
-/* header */ 
-header {
-    z-index: 2;
-    height: 100px;
-    display: flex;
-    width: 100%;
-    background: linear-gradient(-90deg,skyblue, blue);
-    align-items: center;
-    justify-content: space-between;
-    transition: .3s;
+@media screen and (min-width : 450px) {
+        /* header */ 
+    header {
+        z-index: 2;
+        height: 100px;
+        display: flex;
+        width: 100%;
+        background: linear-gradient(-90deg,skyblue, blue);
+        align-items: center;
+        justify-content: space-between;
+        transition: .3s;
 
-}
-.brand-header {
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
+    }
+    .brand-header {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
 
-}
-.judul {
-    margin-left: 80px;
-    font-family: jetBrains;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.judul > h1:nth-child(1) {
-    font-size: 2rem;
-}
-.judul > h2:nth-child(2) {
-    font-size: 1.5rem;
-    color: skyblue;
-}
+    }
+    .judul {
+        margin-left: 80px;
+        font-family: jetBrains;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .judul > h1:nth-child(1) {
+        font-size: 2rem;
+    }
+    .judul > h2:nth-child(2) {
+        font-size: 1.5rem;
+        color: skyblue;
+    }
 
-.nav1 {
-    text-decoration: none;
-    color: black;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    right: 0;
-}
-.link-nav, .menu{
-    text-decoration: none;
-    padding: 10px 20px 10px 20px;
-    font-size: 1rem;
-    font-family: jetBrains;
-    color: rgba(138, 130, 130, 0.918);
+    .nav1 {
+        text-decoration: none;
+        color: black;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 0;
+    }
+    .link-nav, .menu{
+        text-decoration: none;
+        padding: 10px 20px 10px 20px;
+        font-size: 1rem;
+        font-family: jetBrains;
+        color: rgba(138, 130, 130, 0.918);
+        
+    }
+
+
+    /* main */
+
+    .container-main {
+        height: 10000px;
+        position: relative;
+    }
+    .ketentuan_peserta {
+        border: 2px solid blue;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .time_line {
+        border:  2px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .menu {
+        display: none;
+    }
+    .prosedure_pendaftaran {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+    .mekanisme_lomba {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+    .sistem_penilaian {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+    .ketentuan_presentasi_project {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
     
-}
-
-
-/* main */
-
-.container-main {
-    height: 10000px;
-    position: relative;
-}
-.ketentuan_peserta {
-     border: 2px solid blue;
-     display: flex;
-     align-items: center;
-     flex-direction: column;
-
-}
-.time_line {
-    border:  2px solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
 
 @media screen and (max-width : 450px)  {
@@ -164,11 +190,28 @@ header {
     .menu:hover {
         background-color: gray;
     }
-
-}
-@media screen and (min-width : 450px) {
-    .menu {
-        display: none;
+    .menu:active {
+        transform: translateY(10px);
     }
-    
+    .prosedure_pendaftaran {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+    .mekanisme_lomba {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+    .sistem_penilaian {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+    .ketentuan_presentasi_project {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+    }
+
 }
