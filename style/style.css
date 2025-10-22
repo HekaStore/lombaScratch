@@ -1,0 +1,174 @@
+@font-face {
+    font-family: lato;
+    src: url(font/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: jetBrains;
+    src: url(font/JetBrainsMono-Bold.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: lato;
+}
+
+/* header */ 
+header {
+    z-index: 2;
+    height: 100px;
+    display: flex;
+    width: 100%;
+    background: linear-gradient(-90deg,skyblue, blue);
+    align-items: center;
+    justify-content: space-between;
+    transition: .3s;
+
+}
+.brand-header {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+
+}
+.judul {
+    margin-left: 80px;
+    font-family: jetBrains;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.judul > h1:nth-child(1) {
+    font-size: 2rem;
+}
+.judul > h2:nth-child(2) {
+    font-size: 1.5rem;
+    color: skyblue;
+}
+
+.nav1 {
+    text-decoration: none;
+    color: black;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 0;
+}
+.link-nav, .menu{
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 1rem;
+    font-family: jetBrains;
+    color: rgba(138, 130, 130, 0.918);
+    
+}
+
+
+/* main */
+
+.container-main {
+    height: 10000px;
+    position: relative;
+}
+.ketentuan_peserta {
+     border: 2px solid blue;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+
+}
+.time_line {
+    border:  2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media screen and (max-width : 450px)  {
+    .brand-header {
+        margin: 0;
+    }
+    .judul {
+        
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #brand1 {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+    #brand2 {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+    .penjelasan-header{
+        position: absolute;
+        top: 100px;
+        right: 10px;
+        z-index: 3;
+        border: 2px solid;
+        display: none;
+
+    }
+    .link-nav {
+        color: black;
+        display: block;
+        width: 150px;
+        background-color: white;
+        transition: .3s;
+        
+    }
+    .link-nav:hover {
+        background-color: gray;
+    }
+    .judul {
+        margin: 0;
+    }
+    #logo_brand {
+        display: none;
+    }
+
+    .container-main {
+        height: 10000px;
+    }
+    .ketentuan_peserta {
+        max-width: 450px;
+        border: 2px solid blue;
+        display: flex;
+        padding: 30px ;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .time_line {
+        border:  2px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .menu {
+        background-color: aliceblue;
+        border-radius: 5px;
+        margin-right: 10px;
+        color: black;
+        cursor: pointer;
+        border: none;
+        transition: .3s;
+    }
+    .menu:hover {
+        background-color: gray;
+    }
+
+}
+@media screen and (min-width : 450px) {
+    .menu {
+        display: none;
+    }
+    
+}
