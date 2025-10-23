@@ -1,2 +1,2 @@
 # lombaScratch
-buat lomba nanti desember
+Perlombaan Scratch akhir tahun si SMA Negeri 1 Lumajang
