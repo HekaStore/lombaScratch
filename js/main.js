@@ -6,9 +6,7 @@ let navigasi = document.getElementsByClassName("link-nav");
 let main = document.getElementsByClassName("ketentuan_peserta")
 let navMenu = document.getElementsByClassName("penjelasan-header");
 
-navigasi.addEventListener("click", () => {
-    
-})
+
 
 window.onscroll = function(){Headers()}
 function Headers(){
@@ -21,8 +19,15 @@ function Headers(){
         header.style.position = "relative";
         main[0].style.top = "0px"
     }
-
-
 }
 
+navigasi[0].addEventListener("click", function Headers()  {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+    navMenu[0].style.display = "none";
+})
 
+navigasi[1].addEventListener("click", function Headers()  {
+    document.body.scrollTop = 500
+    document.documentElement.scrollTop = 550
+})
