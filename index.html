@@ -30,26 +30,30 @@
             <img id="logo_brand" src="style/foto/PngItem_3774504.png" alt="scratch" height="70" width="90">
 
             <div class="judul">
-                <h1 id="brand1">SMASA CODING OLYMPIAD</h1>
-                <h2 id="brand2">SOC 2025</h2>
+                <img src="style/foto/cropped-SMA-NEGERI-1-1.png" alt="" width="200">
             </div>
             
+            <div class="nav1">
+                <button class="menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+            </div>
         </div>
-            
-        <div class="navigation">
-        <div class="nav1">
-            <button class="menu">MENU </button>
-            <div class="penjelasan-header">
-                <a href="#" class="link-nav">about</a>
-                <a href="#" class="link-nav">contact</a>
-                <a href="#" class="link-nav">service</a>
-            </div>
             
 
-        </div>
-        </div>
         
 
+        <ul class="penjelasan-header">
+                <li class="link-nav">Ketentuan Peserta</li>
+                <li class="link-nav">Timeline</li>
+                <li class="link-nav">Prosedure</li>
+                <li class="link-nav">Mekanisme</li>
+                <li class="link-nav">Sistem Penilaian</li>
+                <li class="link-nav">Ketentuan Presentasi</li>
+            </ul>
+            
     </header>
 
     <main>
@@ -191,7 +195,7 @@
     <script>
         $(document).ready(function() {
             $(".menu").click(function() {
-                $(".penjelasan-header").toggle(100);
+                $(".penjelasan-header").animate({height : "toggle"})
             })
         })
     </script>
